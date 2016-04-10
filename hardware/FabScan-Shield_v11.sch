@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -60,9 +60,6 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tCopper" color="7" fill="11" visible="no" active="no"/>
-<layer number="54" name="bCopper" color="7" fill="1" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -71,8 +68,6 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -9438,11 +9433,12 @@ high speed (Philips)</description>
 <sheet>
 <plain>
 <wire x1="33.02" y1="157.48" x2="35.687" y2="157.48" width="0.8128" layer="94"/>
-<text x="162.56" y="21.59" size="1.27" layer="95">Released under the Creative Commons Attribution Share-Alike License</text>
-<text x="162.56" y="19.05" size="1.27" layer="95">http://creativecommons.org/licenses/by-sa/4.0/</text>
-<text x="162.56" y="15.24" size="1.27" layer="95">Designed by Andreas Watterott (Watterott electronic)</text>
-<text x="162.56" y="25.4" size="2.54" layer="95">Further Infos: http://hci.rwth-aachen.de/fabscan</text>
-<text x="162.56" y="12.7" size="1.27" layer="95">Based on the work of Francis Engelmann and Sebastian Setz</text>
+<text x="162.56" y="22.86" size="1.27" layer="95" align="top-left">Released under the Creative Commons Attribution Share-Alike 
+License. http://creativecommons.org/licenses/by-sa/4.0/
+
+Designed by Andreas Watterott (Watterott electronic)
+
+Based on the work of Francis Engelmann and Sebastian Setz</text>
 <text x="209.55" y="166.37" size="2.54" layer="95">Servos</text>
 <text x="189.23" y="166.37" size="2.54" layer="95">Steppers</text>
 <text x="55.88" y="166.37" size="2.54" layer="95">Arduino</text>
@@ -9453,7 +9449,7 @@ high speed (Philips)</description>
 <attribute name="VALUE" x="109.22" y="154.94" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="X1" gate="G$1" x="165.1" y="7.62" smashed="yes"/>
-<instance part="X2" gate="G$1" x="170.18" y="7.62" smashed="yes"/>
+<instance part="X2" gate="G$1" x="171.45" y="7.62" smashed="yes"/>
 <instance part="D1" gate="G$1" x="157.48" y="142.24" rot="R180"/>
 <instance part="R1" gate="G$1" x="157.48" y="152.4" smashed="yes" rot="R270">
 <attribute name="NAME" x="156.21" y="151.13" size="1.778" layer="95" rot="R90"/>
@@ -9621,7 +9617,7 @@ high speed (Philips)</description>
 <instance part="GND22" gate="1" x="222.25" y="62.23" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="224.79" y="64.77" size="1.778" layer="96" rot="MR270"/>
 </instance>
-<instance part="X3" gate="G$1" x="175.26" y="7.62" smashed="yes"/>
+<instance part="X3" gate="G$1" x="177.8" y="7.62" smashed="yes"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 </instances>
 <busses>
@@ -10346,4 +10342,10 @@ high speed (Philips)</description>
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
