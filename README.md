@@ -10,8 +10,6 @@ Infos about the FabScan 3D-Scanner: http://www.fabscan.org and http://hci.rwth-a
 * [FabScan-Shield (for FabScan Cube)](http://www.watterott.com/en/Arduino-FabScan-Shield)
 * [FabScan Cube Kit with USB camera](http://www.watterott.com/en/FabScan-Cube-complete-Kit)
 * [FabScan Cube Kit without USB camera](http://www.watterott.com/en/FabScan-Cube-Electronics)
-* [FabScan Cube Wood Parts](http://www.watterott.com/en/Fabscan-CUBE-Kit)
-* [FabScan Cube Screw Set](http://www.watterott.com/en/FabScan-Cube-Screw-set)
 * [FabScan Pi](http://www.watterott.com/en/Kits/FabScan)
 
 
